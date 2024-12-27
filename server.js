@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 const express = require('express');
 const cors = require('cors');
 const multer = require('multer');
-const { type } = require('@testing-library/user-event/dist/type');
+
 const app = express();
 const port = process.env.PORT || 5000;
 
