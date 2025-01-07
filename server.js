@@ -173,6 +173,7 @@ app.delete('/category/:id',async(req,res)=>{
         res.status(500).send('failed to delete category');
     }
 })
-app.listen(port, () => {
-    console.log(`App is listening on port ${port}`);
+
+app.listen(port, '0.0.0.0', () => {
+  console.log(`Server is running on http://0.0.0.0:${port}`);
 });
